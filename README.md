@@ -11,16 +11,17 @@ Mobile App React Native is a cross-platform mobile application built using React
 
 ### Core Features
 
-*   **User Authentication**: Implement basic user authentication using React Native's built-in `Alert` and `AsyncStorage` modules.
-*   **Data Storage**: Utilize `AsyncStorage` to store and retrieve data locally on the device.
-*   **Network Request**: Send HTTP requests to a backend API using the `fetch` API.
-*   **Navigation**: Employ React Navigation for navigation between screens.
+*   **User Authentication**: Implement basic user authentication using React Native's built-in `Alert` and `AsyncStorage` modules, with support for password hashing and salting.
+*   **Data Storage**: Utilize `AsyncStorage` to store and retrieve data locally on the device, with data encryption for added security.
+*   **Network Request**: Send HTTP requests to a backend API using the `fetch` API, with support for caching and error handling.
+*   **Navigation**: Employ React Navigation for navigation between screens, with support for animated transitions and gesture handling.
+*   **Error Handling**: Implement robust error handling using try-catch blocks and error boundary components.
 
 ### Additional Features
 
-*   **Home Screen**: Display a list of items fetched from the backend API.
-*   **Detail Screen**: Display detailed information about a selected item.
-*   **Settings Screen**: Allow users to log out and clear stored data.
+*   **Home Screen**: Display a list of items fetched from the backend API, with support for infinite scrolling and loading indicators.
+*   **Detail Screen**: Display detailed information about a selected item, with support for image caching and lazy loading.
+*   **Settings Screen**: Allow users to log out, clear stored data, and toggle dark mode, with support for accessibility features.
 
 ## Technologies Used
 --------------------
@@ -28,10 +29,12 @@ Mobile App React Native is a cross-platform mobile application built using React
 *   **React Native**: For building the mobile application.
 *   **JavaScript**: As the programming language for the application.
 *   **React**: For building the user interface and managing state.
-*   **Redux**: For state management.
-*   **React Navigation**: For navigation between screens.
-*   **AsyncStorage**: For local data storage.
-*   **Fetch**: For making HTTP requests to the backend API.
+*   **Redux**: For state management, with support for Redux Toolkit.
+*   **React Navigation**: For navigation between screens, with support for React Navigation v6.
+*   **AsyncStorage**: For local data storage, with support for encryption.
+*   **Fetch**: For making HTTP requests to the backend API, with support for caching and error handling.
+*   **Moment**: For date and time formatting.
+*   **Lodash**: For utility functions and array manipulation.
 
 ## Installation
 ------------
@@ -54,12 +57,29 @@ Mobile App React Native is a cross-platform mobile application built using React
 
 The project is organized into the following folders:
 
-*   `components`: Reusable UI components.
-*   `screens`: Individual screens of the application.
-*   `actions`: Redux actions for state management.
-*   `reducers`: Redux reducers for state management.
-*   `services`: API-related services.
+*   `components`: Reusable UI components, including custom buttons, inputs, and loaders.
+*   `screens`: Individual screens of the application, including home, detail, and settings screens.
+*   `actions`: Redux actions for state management, including user authentication and data fetching.
+*   `reducers`: Redux reducers for state management, including user authentication and data storage.
+*   `services`: API-related services, including data fetching and caching.
+*   `utils`: Utility functions and constants, including date formatting and encryption.
 
 ### Contributing
+---------------
 
 Contributions are welcome. Please follow the standard guidelines for submitting pull requests and issues.
+
+### API Documentation
+--------------------
+
+API documentation can be found in the `docs/api` folder, including endpoint descriptions and request/response formats.
+
+### Changelog
+-------------
+
+Changelog can be found in the `CHANGELOG.md` file, including a list of changes and bug fixes.
+
+### License
+---------
+
+This project is licensed under the MIT License.
